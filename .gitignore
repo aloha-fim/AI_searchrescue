@@ -10,3 +10,5 @@ frontend/dist/
 backend/uploads/
 *.sqlite
 .DS_Store
+node_modules/
+.vscode/
