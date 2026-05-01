@@ -7,6 +7,7 @@ import VictimReport from './pages/VictimReport'
 import RescuerDashboard from './pages/RescuerDashboard'
 import IncidentDetail from './pages/IncidentDetail'
 import Supplies from './pages/Supplies'
+import Operations from './pages/Operations' 
 import { isRescuer, useAuth } from './auth/AuthContext'
 
 function Home() {
@@ -34,6 +35,8 @@ export default function App() {
           element={<PrivateRoute><IncidentDetail /></PrivateRoute>} />
         <Route path="supplies"
           element={<PrivateRoute><Supplies /></PrivateRoute>} />
+        <Route path="operations"
+          element={<PrivateRoute><Operations /></PrivateRoute>} /> 
 
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
